@@ -60,6 +60,10 @@ body {
     background-color: hsl(6, 63%, 50%);
 }
 
+.count-buttons .visible-gradient {
+    background-color: hsl(176, 100%, 44%);
+}
+
 .count-buttons .visible:hover {
     cursor: pointer;
 }
