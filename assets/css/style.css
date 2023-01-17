@@ -16,7 +16,7 @@ body {
     align-items: baseline;
     justify-content: space-between;
     color: hsl(0, 0%, 100%);
-    margin-top: 5.5rem;
+    margin-top: 5rem;
 }
 
 #navbar .icon {
@@ -82,18 +82,26 @@ body {
 
 #calc-monitor {
     background-color: hsl(224, 36%, 15%);
-    padding: 2rem 1.5rem;
+    padding: .5rem 1.5rem;
     box-sizing: border-box;
     border-radius: .5rem;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     margin-top: 1.2rem;
     margin-bottom: 1rem;
+    height: 6.5rem;
+    flex-direction: column;
 }
 
 #calc-monitor p{
     font-size: 1.8rem;
     color: hsl(0, 0%, 100%);
+}
+
+#calc-monitor .operator {
+    font-size: 1rem;
+    margin: .2rem 0 .4rem;
 }
 
 /* Calculating buttons section */
@@ -112,11 +120,11 @@ body {
     background-color: #fff;
 } 
 
-#keypad-section .calc-buttons .delete-btn:hover, #keypad-section .functional-buttons .reset-btn:hover {
+#keypad-section .calc-buttons .delete-btn:hover, #keypad-section .calc-buttons .reset-btn:hover {
     background-color: hsl(225, 25%, 58%);
 }
 
-#keypad-section .functional-buttons .equal-btn:hover {
+#keypad-section .calc-buttons .equal-btn:hover {
     background-color: hsl(6, 52%, 53%);
 }
 
@@ -150,19 +158,23 @@ body {
     box-shadow: 0px -5px 4px hsl(28, 16%, 65%) inset;
 }
 
-#keypad-section .calc-buttons .delete-btn, #keypad-section .functional-buttons .reset-btn{
+#keypad-section .calc-buttons .multiple-btn {
+    font-size: 1.4rem;
+}
+
+#keypad-section .calc-buttons .delete-btn, #keypad-section .calc-buttons .reset-btn{
     background-color: hsl(225, 21%, 49%);
     color: hsl(30, 25%, 89%);
     box-shadow: 0px -5px 4px hsl(224, 28%, 35%) inset;
 }
 
-#keypad-section .functional-buttons {
+/* #keypad-section .functional-buttons {
     align-items: center;
     justify-content: space-between;
     column-gap: 1rem;
-}
+} */
 
-#keypad-section .functional-buttons div {
+#keypad-section .calc-buttons .reset-btn, #keypad-section .calc-buttons .equal-btn {
     width: 47%;
     text-align: center;
     align-items: flex-end;
@@ -174,9 +186,10 @@ body {
     box-sizing: border-box;
     color: hsl(30, 25%, 89%);
     cursor: pointer;
+    height: 3.2rem;
 }
 
-#keypad-section .functional-buttons .equal-btn {
+#keypad-section .calc-buttons .equal-btn {
     background-color: hsl(6, 63%, 50%);
     box-shadow: 0px -5px 4px hsl(6, 70%, 34%) inset;
 }

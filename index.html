@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./assets/css/gradient-theme.css">
 
   <script src="./assets/js/index.js" defer></script>
+  <script src="./assets/js/light-theme.js"></script>
 
   <title>Frontend Mentor | Calculator app</title>
 
@@ -24,16 +25,16 @@
 <body>
 
   <div class="container" id="navbar">
-    <h1 class="icon">calc</h1>
+    <h1 class="icon light-icon">calc</h1>
     <div id="theme-side">
-      <span class="theme">theme</span>
-      <div id="theme-buttons">
-        <div class="theme-counts">
+      <span class="theme light-theme">theme</span>
+      <div id="theme-buttons light-theme-buttons">
+        <div class="theme-counts light-theme-counts">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="count-buttons">
+        <div class="count-buttons light-count-buttons">
           <button id="dark-theme" class="visible-dark"></button>
           <button id="light-theme"></button>
           <button id="gradient-theme"></button>
@@ -42,7 +43,10 @@
     </div>
   </div>
   <div class="container" id="calc-monitor">
-    <p>399,981</p>
+    <p class="num1"></p>
+    <p class="operator"></p>
+    <p class="num2"></p>
+    <!-- <p class="result"></p> -->
   </div>
   <div class="container" id="keypad-section">
     <div class="calc-buttons">
@@ -62,12 +66,14 @@
       <div><span>0</span></div>
       <div><span>/</span></div>
       <div class="multiple-btn"><span>x</span></div>
-    </div>
-
-    <div class="functional-buttons">
       <div class="reset-btn"><span>reset</span></div>
       <div class="equal-btn"><span>=</span></div>
     </div>
+
+    <!-- <div class="functional-buttons">
+      <div class="reset-btn"><span>reset</span></div>
+      <div class="equal-btn"><span>=</span></div>
+    </div> -->
   </div>
   
   <!-- <div class="attribution">
