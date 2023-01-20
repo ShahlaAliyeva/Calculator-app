@@ -77,6 +77,9 @@ function getLightTheme() {
     "color",
     "hsl(0, 0%, 100%)"
   );
+
+  $('.attribution').css("color", "hsl(60, 10%, 19%)");
+  $('.attribution a').css("color", "hsl(60, 10%, 19%)");
 }
 
 function getDarkTheme() {
@@ -141,6 +144,9 @@ function getDarkTheme() {
     "color",
     "hsl(0, 0%, 100%)"
   );
+
+  $('.attribution').css("color", "hsl(0, 0%, 100%)");
+  $('.attribution a').css("color", "hsl(0, 0%, 100%)");
 }
 
 function getGradientTheme() {
@@ -205,6 +211,9 @@ function getGradientTheme() {
     "color",
     "hsl(198, 20%, 13%)"
   );
+
+  $('.attribution').css("color", "hsl(52, 100%, 62%)");
+  $('.attribution a').css("color", "hsl(52, 100%, 62%)");
 }
 
 $(document).ready(function () {
