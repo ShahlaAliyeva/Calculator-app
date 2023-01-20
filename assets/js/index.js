@@ -274,10 +274,10 @@ $(document).ready(function () {
     } else if (key === "DEL") {
       // number -= number.charAt(number.length - 1)
       number = number.substring(0, number.length - 1);
-      // if(number.length === 0) {
+      // if(num2 === '') {
       //   operator =''
       //   $('.operator').text(operator)
-      // } else
+      // }
 
       // operator num1 den evvel silinende num1 silinmir indi hal-hazirda da num1 operatordan evvel silinir operator yerinde qalir sonra da alem deyir
       
@@ -302,7 +302,7 @@ $(document).ready(function () {
         }
         $(".num1").text(num1);
         console.log(num1);
-      }
+      } 
     } else if (key === "RESET") {
       number = "";
       num1 = number;
@@ -336,7 +336,7 @@ $(document).ready(function () {
         operator = $(this).valueOf()[0].innerText;
         $(".operator").text(operator);
         console.log("operator: ", operator);
-      }
+      } 
 
     } else if (key === "=") {
       if (num1 !== "" && num2 !== "") {
