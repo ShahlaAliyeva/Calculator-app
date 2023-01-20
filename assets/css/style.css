@@ -100,7 +100,6 @@ body {
 
 #calc-monitor p{
     font-size: 1.8rem;
-    color: hsl(0, 0%, 100%);
 }
 
 #calc-monitor .operator {
