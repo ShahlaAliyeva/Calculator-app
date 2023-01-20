@@ -192,6 +192,32 @@ body {
     box-shadow: 0px -5px 4px hsl(6, 70%, 34%) inset;
 }
 
+/* Attribution */
+
+.attribution {
+    position: fixed;
+    bottom: 1rem;
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    align-items: baseline;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.attribution a {
+    color: #fff;
+    margin-left: .3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
 /* ----------- MOBILE LAYOUT -------------*/
 
 @media (max-width: 575px) {
@@ -271,6 +297,19 @@ body {
         align-items: center;
         font-size: 1.2rem;
         height: 3rem;
+    }
+
+    /* Attribution */
+
+    .attribution {
+        font-size: .8rem;
+        width: 100%;
+    }
+    
+    
+    .attribution a {
+        margin-left: .2rem;
+        font-size: .9rem;
     }
 
 }

@@ -314,6 +314,21 @@ $(document).ready(function () {
       $(".operator").text(operator);
       $(".result").text(result);
     } else if (key === "-" || key === "+" || key === "/" || key === "X") {
+    
+      if (num1!=='' && num2!=='') {
+        operator = $(this).valueOf()[0].innerText;
+        $(".operator").text(operator);
+        console.log("operator: ", operator);
+      } else if (num2 === "" && num1 !== '') {
+        num1 = number;
+        console.log("operator and num1: ", num1);
+        operator = $(this).valueOf()[0].innerText;
+        $(".operator").text(operator);
+        console.log("operator: ", operator);
+        //ilk if scope undan cixardildi
+        number = "";
+      }  
+
       if (result !== "") {
         number = result;
         num1 = number;
@@ -323,20 +338,6 @@ $(document).ready(function () {
         $(".result").remove();
         console.log("result is num1 now: ", num1);
       }
-
-      if (num2 === "") {
-        num1 = number;
-        console.log("num1: ", num1);
-        operator = $(this).valueOf()[0].innerText;
-        $(".operator").text(operator);
-        console.log("operator: ", operator);
-        //ilk if scope undan cixardildi
-        number = "";
-      } else if (num1!=='' && num2!=='') {
-        operator = $(this).valueOf()[0].innerText;
-        $(".operator").text(operator);
-        console.log("operator: ", operator);
-      } 
 
     } else if (key === "=") {
       if (num1 !== "" && num2 !== "") {
