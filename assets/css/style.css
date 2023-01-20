@@ -3,6 +3,7 @@
 body {
     font-family: 'League Spartan', sans-serif;
     background-color: hsl(222, 26%, 31%);
+    font-weight: 700;
 }
 
 .container {
@@ -171,12 +172,6 @@ body {
     box-shadow: 0px -5px 4px hsl(224, 28%, 35%) inset;
 }
 
-/* #keypad-section .functional-buttons {
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 1rem;
-} */
-
 #keypad-section .calc-buttons .reset-btn, #keypad-section .calc-buttons .equal-btn {
     width: 47%;
     text-align: center;
@@ -195,4 +190,94 @@ body {
 #keypad-section .calc-buttons .equal-btn {
     background-color: hsl(6, 63%, 50%);
     box-shadow: 0px -5px 4px hsl(6, 70%, 34%) inset;
+}
+
+/* ----------- MOBILE LAYOUT -------------*/
+
+@media (max-width: 575px) {
+    .container {
+        width: 90%;
+    }
+    #navbar {
+        margin-top: 1.4rem;
+    }
+    #navbar .icon {
+        font-size: 1.7rem;
+    }
+    
+    #theme-side {
+        column-gap: .3rem;
+    }
+    
+    #theme-side .theme {
+        font-size: .5rem;
+        margin-bottom: .2rem;
+    }
+    
+    .count-buttons {
+        padding: .2rem;
+        width: 2.4rem;
+    }
+    
+    .count-buttons button {
+        padding: .4rem;
+    }
+
+    .theme-counts span{
+        font-size: .5rem;
+        margin-bottom: .1rem;
+    }
+    
+    /* Monitor Side */
+
+    #calc-monitor {
+        padding: .1rem .7rem;
+        margin-top: .6rem;
+        margin-bottom: .8rem;
+        height: 4.7rem;
+    }
+    
+    #calc-monitor p{
+        font-size: 1.2rem;
+    }
+    
+    #calc-monitor .operator {
+        font-size: .8rem;
+    }
+
+    /* Calculating buttons section */
+
+    #keypad-section {
+        padding: .8rem;
+        row-gap: 1rem;
+    }
+
+    #keypad-section .calc-buttons {
+        column-gap: 1px;
+        row-gap: .8rem;
+    }
+
+    #keypad-section .calc-buttons div{
+        width: 3rem;
+        height: 1.7rem;
+        font-size: 1.2rem;
+    }
+
+    #keypad-section .calc-buttons .multiple-btn {
+        font-size: 1.1rem;
+    }
+    
+    #keypad-section .calc-buttons .reset-btn, #keypad-section .calc-buttons .equal-btn {
+        align-items: center;
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
